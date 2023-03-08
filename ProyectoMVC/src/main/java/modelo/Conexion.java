@@ -5,7 +5,7 @@ import java.sql.*;
 public class Conexion {
     private static final String JDBC_URL = "jdbc:mysql://localhost/siu?useSSL=false&serverTimezone=UTC";
     private static final String JDBC_USER = "root";
-    private static final String JDBC_PASS = "rosales2811";
+    private static final String JDBC_PASS = "Avalos21";
    
     
     public static Connection getConnection() throws SQLException {

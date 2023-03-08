@@ -44,9 +44,9 @@ public class MdiGeneral extends javax.swing.JFrame {
         mnuSalirSistema = new javax.swing.JCheckBoxMenuItem();
         jMenu1 = new javax.swing.JMenu();
         jMenu3 = new javax.swing.JMenu();
+        jMenuItem6 = new javax.swing.JMenuItem();
         jMenuItem3 = new javax.swing.JMenuItem();
         jMenuItem5 = new javax.swing.JMenuItem();
-
 
         jMenuItem1.setText("jMenuItem1");
 
@@ -94,11 +94,15 @@ public class MdiGeneral extends javax.swing.JFrame {
             }
         });
 
- 
+        jMenuItem6.setText("Mantenimiento Cursos");
+        jMenuItem6.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jMenuItem6ActionPerformed(evt);
+            }
+        });
+        jMenu3.add(jMenuItem6);
+
         jMenuItem3.setText("Mantenimiento Facultades");
-
-       
-
         jMenuItem3.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jMenuItem3ActionPerformed(evt);
@@ -106,11 +110,7 @@ public class MdiGeneral extends javax.swing.JFrame {
         });
         jMenu3.add(jMenuItem3);
 
-
         jMenuItem5.setText("Mantenimiento Carreras");
-
-       
-
         jMenuItem5.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jMenuItem5ActionPerformed(evt);
@@ -118,8 +118,6 @@ public class MdiGeneral extends javax.swing.JFrame {
         });
         jMenu3.add(jMenuItem5);
 
-
-   
         jMenu1.add(jMenu3);
 
         jMenuBar1.add(jMenu1);
@@ -183,7 +181,15 @@ public class MdiGeneral extends javax.swing.JFrame {
         ventana.setLocation((desktopSize.width - FrameSize.width) / 2, (desktopSize.height - FrameSize.             height) / 2);
     }//GEN-LAST:event_jMenuItem5ActionPerformed
 
+    private void jMenuItem6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem6ActionPerformed
+         frmMantenimientoCursos ventana = new frmMantenimientoCursos();
+        jDesktopPane1.add(ventana);
+        Dimension desktopSize = jDesktopPane1.getSize();
+        Dimension FrameSize = ventana.getSize();
+        ventana.setLocation((desktopSize.width - FrameSize.width) / 2, (desktopSize.height - FrameSize.             height) / 2);
+    }//GEN-LAST:event_jMenuItem6ActionPerformed
 
+//para guardar el proyecto
         
     /**
      * @param args the command line arguments
@@ -231,7 +237,7 @@ public class MdiGeneral extends javax.swing.JFrame {
     private javax.swing.JMenuItem jMenuItem3;
     private javax.swing.JMenuItem jMenuItem4;
     private javax.swing.JMenuItem jMenuItem5;
-
+    private javax.swing.JMenuItem jMenuItem6;
     private javax.swing.JCheckBoxMenuItem mnuSalirSistema;
     private javax.swing.JMenu salirDelSistema;
     // End of variables declaration//GEN-END:variables
